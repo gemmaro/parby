@@ -41,9 +41,7 @@ module Parby
       end
     end
 
-    def >>(other)
-      self.and other
-    end
+    alias >> and
 
     def fmap(&block)
       Parser.new do |input, index|
