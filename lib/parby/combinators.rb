@@ -42,9 +42,7 @@ module Combinators
     end
   end
 
-  def regex(regex)
-    return self.regexp(regex)
-  end
+  alias regex regexp
 
   # Searches in the input for one of the given characters (characters can be either a string or an array), and yields it
   def one_of(characters)
