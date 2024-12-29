@@ -27,9 +27,7 @@ module Parby
       end
     end
 
-    def |(other)
-      self.or other
-    end
+    alias | or
 
     def and(another_parser)
       Parser.new do |input, index|
