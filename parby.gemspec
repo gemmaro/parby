@@ -5,7 +5,6 @@ require 'parby/version'
 Gem::Specification.new do |s|
   s.name = 'parby'
   s.version = Parby::VERSION
-  s.date = '2019-02-17'
   s.summary = 'Happy little parser combinators'
   s.authors = ['Rodrigo Martin']
   s.email = 'rodrigoleonardomartin@gmail.com'
