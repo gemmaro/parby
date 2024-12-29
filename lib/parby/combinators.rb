@@ -1,6 +1,6 @@
 require 'parby/parser'
 
-module Combinators
+module Parby::Combinators
   # Always yields the value passed to it, no matter the input
   def of(value)
     Parser.new { |input, index| Success.new(index, value, input) }
