@@ -1,6 +1,8 @@
 module Parby
   class Parser
-    # { |input, index| } -> result or { |input| } -> result
+    # call-seq:
+    #   new { |input, index| } -> result
+    #   new { |input| } -> result
     def initialize(&block)
       raise(ArgumentError, 'A bare parser must be initialized with a 1 or 2 argument block') unless block_given?
 
