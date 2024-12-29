@@ -59,9 +59,7 @@ module Parby
       end
     end
 
-    def map(&block)
-      fmap(&block)
-    end
+    alias map fmap
 
     def consuming
       self >> Parby.all
